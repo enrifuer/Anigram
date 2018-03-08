@@ -1,0 +1,26 @@
+/*color para la barra de menu completa*/
+nav.navbar{
+	background-color: #ffb3b1;
+}
+
+/*Estilo para la barra que contiene el texto de menu, para que aparezca alineada en el centro*/
+.navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.navbar-default .navbar-nav > li > a{
+	color: white !important;
+}
+
+nav.navbar ul.nav li {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 30px;
+    line-height: !important 1.42857143;
+    color: !important #333;
+    background-color: !important #fff;
+}
+
+
+
