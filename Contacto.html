@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contacto</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.js" integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="container">
+	<div class="row">
+		<h1>Contacta con nosotros</h1>
+
+		<div class = "col-md-6 offset-md-3">
+			<form action="mailto:mirlop01@ucm.es?subject=Contacto Anigram" method="post" enctype="text/plain">
+				<div class="input-group">
+					<label for="Nombre">Nombre: </label>
+					<input class="form-control" type="text" name="Nombre" id="Nombre">
+				</div>
+				<div class="input-group">
+					<label for="Email">Email: </label>
+					<input class="form-control" type="email" name="Email" id="Email">
+				</div>
+				<div class="input-group">
+				<label>Motivo de la consulta: </label>
+					<div class="col-md-12">
+						<input id="evaluacion" class="form-control-addon" type="radio" name="Motivo" value="Evaluacion" checked> 
+						<label for="evaluacion">Evaluación</label>
+					</div>
+					
+					<div class="col-md-12">
+						<input id="sugerencias" class="form-control-addon" type="radio" name="Motivo" value="Sugerencias">
+						<label for="sugerencias">Sugerencias</label>
+					</div>
+
+					<div class="col-md-12">
+						<input id="criticas" class="form-control-addon" type="radio" name="Motivo" value="Criticas">
+						<label for="criticas">Críticas</label>
+					</div>
+
+					<div class="input-group">
+					<textarea class="form-control"  aria-label="..." name="Consulta" rows="4" cols="50"></textarea>
+				</div>
+				<div class="input-group">
+					<label><input type="checkbox" id="Terminos" value="first_checkbox"> Marque esta casilla para verificar que ha leído nuestros términos y condiciones del servicio</label>
+					<input type="submit" id="submit-btn" class="btn btn-primary" disabled>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+</body>
+<script>
+	$("#Terminos").click(function(){
+		if($("#Terminos").is(":checked")){
+			$("#submit-btn").prop('disabled', false);
+		}else{
+			$("#submit-btn").prop('disabled', true);
+		}
+	});
+
+</script>
+
+</html>

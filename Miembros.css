@@ -1,0 +1,43 @@
+h1, h2, h3, h4{
+	text-align: center;
+}
+#Descripcion{
+	margin: 30px 0;
+}
+.bold{
+	font-weight: bold;
+}
+.member{
+	text-align: center;
+	padding: 14px 0;
+}
+a{
+	color:#f5a37a;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+}
+.list-group-item{
+	border: 1px solid #fdd2bd;	
+}
+li:hover{
+	background-color: #ffaa80;	
+}
+
+li:hover > a{
+	color:white;
+}
+
+img{
+	width: 300px;
+	border-radius: 20px;
+}
+
+.panel-default{
+	margin: 30px 0;
+}
+
+.panel-heading{
+	background-color: #9cdfef !important;
+}
