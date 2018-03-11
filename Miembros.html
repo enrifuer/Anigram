@@ -2,16 +2,41 @@
 <html>
 <head>
 	<title>Miembros</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" href="Miembros.css">
 
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="css/Styles.css" media="all" />
+
+	<!--Librerias necesarias para bootstrap-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+	<!--insercion del favicon y del titulo de la pagina-->
+	<link rel="icon" href="img/PataIcon.ico" sizes="16x16" type="image/ico">
 </head>
 <body>
-	
+
+<div class="center"><a title="Inicio" href="index.html"><img src="Assets/img/Logo-Completo.png" alt="Logo" width="500" height="180" /></a></div>
+
+<nav class="navbar navbar-default " role="navigation">
+
+    <!--Contenido y enlaces del menu-->
+    <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-center">
+            <li><a href="detalles.html">Detalles</a></li>
+            <li><a href="bocetos.html">Bocetos</a></li>
+            <li><a href="miembros.html">Miembros</a></li>
+            <li><a href="planificacion.html">Planificación</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </div>
+</nav>
+
 <div class="container">
-	<div id="Descripcion" class="row">
-		<h1>Miembros del grupo</h1>
-		<h4>Grupo 3</h4>
+	<div id="Descripcion" class="row center">
+		<h1 class="bold">Miembros del grupo</h1>
+		<h3>Grupo 3</h3>
 		
 	</div>
     <div class="row">
@@ -34,9 +59,11 @@
 			  	</div>
 				<div class="panel-body">
 				  	<div class="col-md-6">
-				      <img class="media-object" src="Assets/Img/Carla.png" alt="Foto de Carla">
+				      <img class="media-object imagen-perfil" src="Assets/img/Miembros/Carla.png" alt="Foto de Carla">
 				  	</div>
 				  	<div class="datos-miembros col-md-6">
+				  		<label> Descripción:</label>
+				  		<p>Soy una persona alegre y extrovertida. Me encanta la informática, no podría imaginarme haciendo otra cosa. Adoro los animales, hacer deporte y salir con los amigos, aunque al final del día siempre hay tiempo para pizza y peli en Netflix.</p>
 				  		<label> Email:</label>
 						<p class="email-text">cpenarri@ucm.es</p>
 				  	</div>
@@ -53,11 +80,13 @@
 			  	</div>
 				<div class="panel-body">
 					<div class="datos-miembros col-md-6">
+						<label> Descripción:</label>
+						<p >Amante de la informática. Actualmente estoy trabajando como freelance en el desarrollo de páginas web, cosa que me encanta. Además de eso siempre tengo tiempo ara aprender cosas nuevas e iniciar proyectos por mi cuenta. Adoro los coches, los videojuegos y, por supuesto los animales.</p>
 						<label> Email:</label>
 						<p class="email-text">enrifuer@ucm.es</p>
 					</div>
-				  	<div class="col-md-6">
-				      <img class="media-object" src="Assets/Img/Enrique.png" alt="Foto de Enrique">
+				  	<div class="col-md-4 col-md-offset-2">
+				      <img class="media-object imagen-perfil" src="Assets/img/Miembros/Enrique.png" alt="Foto de Enrique">
 				  	</div>
 				  	
 				</div>
@@ -73,9 +102,11 @@
 			  	</div>
 				<div class="panel-body">
 				  	<div class="col-md-6">
-				      <img class="media-object" src="Assets/Img/Miriam.png" alt="Foto de Miriam">
+				      <img class="media-object imagen-perfil"  src="Assets/img/Miembros/Miriam.png" alt="Foto de Miriam">
 				  	</div>
 				  	<div class="datos-miembros col-md-6">
+				  		<label> Descripción:</label>
+						<p>Apasionada de los libros, la informática, los videojuegos y las series. Siempre ando buscando nuevos retos con los que superarme, haciendo proyectos propios y aprendiendo todo lo que esté en mi mano. Me pierdo siempre que veo un perro pasar por delante.</p>
 						<label> Email:</label>
 						<p class="email-text">mirlop01@ucm.es</p>
 					</div>
