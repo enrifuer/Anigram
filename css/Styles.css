@@ -6,7 +6,9 @@ nav.navbar{
 
 /*Estilo para la barra que contiene el texto de menu, para que aparezca alineada en el centro*/
 .navbar-nav.navbar-center {
-	margin-left: 20%;
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
 }
 
 .navbar-default .navbar-nav > li > a{
@@ -37,7 +39,7 @@ nav.navbar ul.nav li {
 	line-height: 1.1;
 	color: inherit;
 }
-p, label{
+p, label, li{
 	font-family: "Cormorant Garamond", serif !important;
 	font-size: 20px;
 }
@@ -154,4 +156,20 @@ tr:nth-child(odd){
 	color:darkred;
 	font-size: 14px;
 	margin-bottom: 20px ;
+}
+
+/*-------- BOCETOS MENU -------*/
+.btn-default{
+	border: 2px solid #bae0c2 !important;
+	color: #81b78d !important;
+}
+
+.btn-default:hover, .btn-default:focus{
+	background-color: #81b78d !important;
+	color: white !important;
+}
+
+.boceto>img, .boceto>ul>li>img{
+	width: 700px;
+    margin: 0 20% 15% 20%;
 }
