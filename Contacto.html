@@ -2,51 +2,81 @@
 <html>
 <head>
 	<title>Contacto</title>
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.js" integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA=" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="css/Styles.css" media="all" />
+
+	<!--Librerias necesarias para bootstrap-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+	<!--insercion del favicon y del titulo de la pagina-->
+	<link rel="icon" href="Assets/img/PataIcon.ico" sizes="16x16" type="image/ico">
 </head>
 <body>
 
+<div class="center"><a title="Inicio" href="index.html"><img src="Assets/img/Logo-Completo.png" alt="Logo" width="500" height="180" /></a></div>
+
+<nav class="navbar navbar-default " role="navigation">
+
+    <!--Contenido y enlaces del menu-->
+    <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-center">
+            <li><a href="detalles.html">Detalles</a></li>
+            <li><a href="bocetos.html">Bocetos</a></li>
+            <li><a href="miembros.html">Miembros</a></li>
+            <li><a href="planificacion.html">Planificación</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </div>
+</nav>
 <div class="container">
 	<div class="row">
-		<h1>Contacta con nosotros</h1>
+		<h1 class="center">Contacta con nosotros</h1>
+	<div class="container">
+		<div class="row">
 
-		<div class = "col-md-6 offset-md-3">
-			<form action="mailto:mirlop01@ucm.es?subject=Contacto Anigram" method="post" enctype="text/plain">
-				<div class="input-group">
-					<label for="Nombre">Nombre: </label>
-					<input class="form-control" type="text" name="Nombre" id="Nombre">
-				</div>
-				<div class="input-group">
-					<label for="Email">Email: </label>
-					<input class="form-control" type="email" name="Email" id="Email">
-				</div>
-				<div class="input-group">
-				<label>Motivo de la consulta: </label>
-					<div class="col-md-12">
-						<input id="evaluacion" class="form-control-addon" type="radio" name="Motivo" value="Evaluacion" checked> 
-						<label for="evaluacion">Evaluación</label>
+			<div class = "col-md-4 col-md-offset-4">
+				<form action="mailto:mirlop01@ucm.es?subject=Contacto Anigram" method="post" enctype="text/plain">
+					<div class="input-group ">
+						<label for="Nombre">Nombre: </label>
+						<input class="form-control" type="text" name="Nombre" id="Nombre">
 					</div>
-					
-					<div class="col-md-12">
-						<input id="sugerencias" class="form-control-addon" type="radio" name="Motivo" value="Sugerencias">
-						<label for="sugerencias">Sugerencias</label>
+					<div class="input-group">
+						<label for="Email">Email: </label>
+						<input class="form-control" type="email" name="Email" id="Email">
 					</div>
+					<div class="input-group">
+						<label>Motivo de la consulta: </label>
+						<div class="col-md-12">
+							<input id="evaluacion" class="form-control-addon" type="radio" name="Motivo" value="Evaluacion" checked> 
+							<label for="evaluacion"> Evaluación</label>
+						</div>
+						
+						<div class="col-md-12">
+							<input id="sugerencias" class="form-control-addon" type="radio" name="Motivo" value="Sugerencias">
+							<label for="sugerencias"> Sugerencias</label>
+						</div>
 
-					<div class="col-md-12">
-						<input id="criticas" class="form-control-addon" type="radio" name="Motivo" value="Criticas">
-						<label for="criticas">Críticas</label>
+						<div class="col-md-12">
+							<input id="criticas" class="form-control-addon" type="radio" name="Motivo" value="Criticas">
+							<label for="criticas"> Críticas</label>
+						</div>
 					</div>
 
 					<div class="input-group">
-					<textarea class="form-control"  aria-label="..." name="Consulta" rows="4" cols="50"></textarea>
-				</div>
-				<div class="input-group">
-					<label><input type="checkbox" id="Terminos" value="first_checkbox"> Marque esta casilla para verificar que ha leído nuestros términos y condiciones del servicio</label>
-					<input type="submit" id="submit-btn" class="btn btn-primary" disabled>
-				</div>
-			</form>
+						<textarea class="form-control" name="Consulta" rows="4" cols="50" placeholder="Introduce tu mensaje aquí."></textarea>
+					</div>
+
+					<div class="input-group">
+						<label id="terminos-condiciones">
+							<input type="checkbox" id="Terminos" value="first_checkbox"> Marque esta casilla para verificar que ha leído nuestros términos y condiciones del servicio*
+						</label>
+						<input type="submit" id="submit-btn" class="btn btn-success" disabled>
+					</div>
+				</form>
+			</div>
 		</div>
 	</div>
 </div>

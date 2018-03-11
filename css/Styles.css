@@ -37,7 +37,7 @@ nav.navbar ul.nav li {
 	line-height: 1.1;
 	color: inherit;
 }
-p{
+p, label{
 	font-family: "Cormorant Garamond", serif !important;
 	font-size: 20px;
 }
@@ -142,4 +142,16 @@ tr:nth-child(odd){
 
 .datos-miembros {
 	text-align: justify;
+}
+
+/*-------- CONTACTO ----------*/
+.input-group{
+	margin: 20px 0;
+	width: 100%;
+}
+
+#terminos-condiciones{
+	color:darkred;
+	font-size: 14px;
+	margin-bottom: 20px ;
 }
