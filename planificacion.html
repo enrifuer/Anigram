@@ -3,17 +3,40 @@
 <html>
 	<head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="css/tablaPlanificacion.css" media="all"/>
-	<link rel="stylesheet" type="text/css" href="css/bodyPlanificacion.css" media="all"/>
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="css/Styles.css" media="all"/>
 	<!--Librerias de bootstrap-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<title>Planificación</title>
 	</head>
-	<body> 
-	<div class="container">
-      <h1> Planificación</h1>
+	
+	<!--insercion del favicon y del titulo de la pagina-->
+	<link rel="icon" href="Assets/img/PataIcon.ico" sizes="16x16" type="image/ico">
+</head>
+	<body>
+	
+<div class="center"><a title="Inicio" href="index.html"><img src="Assets/img/Logo-Completo.png" alt="Logo" width="500" height="180" /></a></div>
+
+<nav class="navbar navbar-default " role="navigation">
+
+    <!--Contenido y enlaces del menu-->
+    <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-center">
+            <li><a href="detalles.html">Detalles</a></li>
+            <li><a href="bocetos.html">Bocetos</a></li>
+            <li><a href="miembros.html">Miembros</a></li>
+            <li><a href="planificacion.html">Planificación</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </div>
+</nav>
+
+	 <div class="container">
+	 <div id="Descripcion" class="row center">
+      <h1 class="bold"> Planificación</h1>
+	 </div>
     <p>
 		 Planificar nuestro proyecto es un punto importante ya que debemos conocer las tareas
 		 que debemos realizar, aproximar las fechas en las que estas tareas deben estar hechas
@@ -75,7 +98,7 @@
 	<td>Práctica 1</td>
 	<td>3/03/2018</td>
 	<td>11/03/2018</td>
-	
+
 	<td>
 	<ol>
 	<li>index.html</li>
@@ -105,7 +128,7 @@
 	<td>8/04/2018</td>
 	
 	<td>
-	<ol>
+	<ol id="lista">
 	<li>Página inicial: Home</li>
 	<li>Crear usuario nuevo</li>
 	<li>Añadir mascotas y sus datos</li>
@@ -119,9 +142,8 @@
 	<li>Añadir comentarios a las fotos</li>
 	<li>Añadir "hashtags" o algún comentario al subir una foto</li>
 	</ol>
-	
 	<td>
-	<ol>
+	<ol id="lista">
 	<li>Kike</li>
 	<li>Kike</li>
 	<li>Miriam</li>
@@ -135,6 +157,7 @@
 	<li>Carla</li>
 	<li>Carla</li>
 	</ol>
+	
 	</td>	
 	</tr>
  
