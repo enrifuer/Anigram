@@ -81,11 +81,12 @@ body{
 	border: black 1px solid;
 }
 #tablahitos td{
-	height: 100px;
+	height: 20px;
 	width: 100px;
 	border: black 1px solid;
 }
 #tablahitos{
+	
 	border: black 1px solid;
 }
 tr:nth-child(even){
@@ -94,6 +95,11 @@ tr:nth-child(even){
 tr:nth-child(odd){
    background: #F8E0E0;
 }
+th,td{
+	font-family: "Cormorant Garamond", serif !important;
+	font-size: 20px;
+}
+
 
 /*------- MIEMBROS ---------*/
 #Descripcion{
@@ -173,3 +179,4 @@ tr:nth-child(odd){
 	width: 700px;
     margin: 0 20% 15% 20%;
 }
+
