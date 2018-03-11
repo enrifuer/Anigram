@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 	<title>Miembros</title>
     <meta charset="utf-8">
     
@@ -15,6 +16,7 @@
 
 	<!--insercion del favicon y del titulo de la pagina-->
 	<link rel="icon" href="Assets/img/PataIcon.ico" sizes="16x16" type="image/ico">
+
 </head>
 
 <body>
@@ -34,6 +36,7 @@
             </ul>
         </div>
     </nav>
+
     <div class="container" >
         <div class="btn-group bocetos-menu " role="group" >
             <button class="btn btn-default" onclick="muestraBoceto('login')">Login</button>
@@ -49,6 +52,7 @@
             <button class="btn btn-default" onclick="muestraBoceto('Configuracion')">Ajustes</button>
             <button class="btn btn-default" onclick="muestraBoceto('video-mockups')">Video</button>
         </div>
+
         <div class="col-md-10 col-offset-md-1 boceto" id="video-mockups">
             <h1>Vídeo guía de la aplicación</h1>
             <video width="1080" height="920" controls>
@@ -111,23 +115,27 @@
             <img src="assets/img/Bocetos/Menu_detalle.png" alt="Menó desplegado">
             <p>El menú se despliega al pulsar en la foto del perfil logueado en la parte superior izquierda.</p>
         </div>
+
         <div class="col-md-10 col-offset-md-1 boceto" id="evaluar-foto">
             <h1>Evaluar foto</h1>
             <p>Las fotos se evaluarán de 1 a 5 woofs. La popularidad por tanto, se calculará en base a la media de los woofs obtenidos en las publicaciones.</p>
             <p>Para evaluar la publicacion deseada solo hay que pulsar el número de woofs que le quieras asignar, empezando el primero por la iquierda</p>
             <img src="assets/img/Bocetos/lIKE.png" alt="Evaluación de fotos">
         </div>
+
         <div class="col-md-10 col-offset-md-1 boceto" id="comentario">
             <h1>Comentar foto</h1>
             <p>Para comentar una foto hay que ser usuario registrado. En el área de la derecha de la foto se encuentran los comentarios y últimos woofs. Para añadir un comentario no hay más que pulsar el icono '+' situado en la parte derecha.</p>
             <img src="assets/img/Bocetos/Comentario.png" alt="Subir foto 1">
         </div>
+
         <div class="col-md-10 col-offset-md-1 boceto" id="subir-foto">
             <h1>Subir foto</h1>
             <p>Para subir una foto hay que ser usuario registrado. Las fotos se seleccionan pulsando en el logo de Anigram que estará de forma estática situado en la parte inferior derecha.</p>
             <img src="assets/img/Bocetos/subir_foto_1.png" alt="Subir foto 1">
             <img src="assets/img/Bocetos/Subir_foto2.png" alt="Subir foto 2">
         </div>
+
         <div class="col-md-10 col-offset-md-1 boceto" id="Perfil-usuario">
             <h1>Perfil de usuario</h1>
             <p>El perfil de usuario aparece siempre que pulsamos sobre la foto de usuario situada en la parte superior izquierd de las publicaciones, o bien cuando buscamos un usuario en la pestaña de búsqueda.</p>
@@ -142,6 +150,7 @@
                 </li>
             </ul>
         </div>
+
         <div class="col-md-10 col-offset-md-1 boceto" id="notificaciones">
             <h1>Notificaciones</h1>
             <p>Accedemos al panel de notificaciones mediante el menú lateral izquierdo.</p>
@@ -153,6 +162,7 @@
             </ul>
            <img src="assets/img/Bocetos/Notificaciones.png" alt="Notificaciones">
         </div>
+
         <div class="col-md-10 col-offset-md-1 boceto" id="busqueda">
             <h1>Búsqueda</h1>
             <p>Accedemos al panel de búsqueda mediante el menú lateral izquierdo.</p>
@@ -165,6 +175,7 @@
             </ul>
            <img src="assets/img/Bocetos/busqueda.png" alt="Búsqueda">
         </div>
+
         <div class="col-md-10 col-offset-md-1 boceto" id="amigos">
             <h1>Amigos</h1>
             <p>Accedemos al panel de búsqueda mediante el menú lateral izquierdo.</p>
@@ -173,6 +184,7 @@
             <p>y qué cuentas te han mandadouna notificación para seguir tu mascota/comercio:</p>
             <img src="assets/img/Bocetos/Peticiones_amigos.png" alt="Peticiones de amigos">
         </div>
+
         <div class="col-md-10 col-offset-md-1 boceto" id="Configuracion">
             <h1>Ajustes</h1>
             <p>Accedemos al panel de búsqueda mediante el menú lateral izquierdo.</p>
@@ -183,6 +195,7 @@
             <p>ó bien cambiar los datos que se muestran en tu perfil de negocio:</p>
             <img src="assets/img/Bocetos/Configuracion_comercial.png" alt="Configuración comercial">
         </div>
+
         <div class="col-md-10 col-offset-md-1 boceto" id="logout">
             <h1>Logout</h1>
             
@@ -202,5 +215,20 @@
             $(id).show();
         }
     </script>
+
 </body>
+
+<footer>
+
+    <div id="footer" class="page-footer2">
+        <div class="container">
+            <div class="row">
+                <div class="center"><h2>Esto es Anigram, esperemos que os guste :)</h2></div>
+                <div class="center"><a title="Inicio" href="index.html"><img src="Assets/img/Completo-fondo-blanco.png" alt="Logo" width="300" height="100" /></a></div>
+            </div>
+        </div>
+    </div>
+    
+</footer>
+
 </html>
