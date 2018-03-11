@@ -52,7 +52,21 @@
             <button class="btn btn-default" onclick="muestraBoceto('Configuracion')">Ajustes</button>
             <button class="btn btn-default" onclick="muestraBoceto('video-mockups')">Video</button>
         </div>
+        <div id="referencias" class=" col-md-10 col-offset-md-1 boceto">
+        	<h1>Referencias del diseño</h1>
 
+        	<p>Para el diseño de la aplicación hemos tenido varias aplicaciones de referencia. La principal referencia de la que sacamos la funcionalidad básica ha sido Instagram. La diferencia entre Instagram y nuestra aplicación será que nuestra aplicación le dará oportunidad de darse a conocer entre un público al que le interesa directamente, es decir, comercios tales como tiendas de mascotas, veterinarios o protectoras se darán a conocer a un público que saben que van a tener mascota y a las que le puede interesar. </p>
+        	<p>Además proponemos la idea en el que una cuenta puede tener varios perfiles de mascotas, con las que podrá realizar diferentes acciones como subir fotos o seguir a otras personas, de manera que cada mascota puede tener, si se quiere, varios tipos de contenido mostrados en la pantalla de inicio.</p>
+            <img src="assets/img/instagram.png" alt="Instagram">
+            <p>El menú lateral obtuvimos la idea del menú del Play Store, de manera que sea un menú sencillo compuesto por iconos, que se expanden de manera que muestran el nombre.</p>
+            <img src="assets/img/playstore.png" alt="Play Store">
+            <p>Por último el diseño del perfil del usuario registrado lo obtuvimos del perfil de usuario que se muestr en la versión web de Whatsapp.</p>
+            <img src="assets/img/whatsapp.png" alt="Whatsapp">
+            <p>Además de esto, también obtuvimos una idea del diseño de la serie Black Mirror del capítulo "Caída en picado"</p>
+            <img src="assets/img/blackmirror.jpeg" alt="Black Mirror">
+
+
+        </div>
         <div class="col-md-10 col-offset-md-1 boceto" id="video-mockups">
             <h1>Vídeo guía de la aplicación</h1>
             <video width="1080" height="920" controls>
@@ -206,7 +220,7 @@
     <script>
         (function(){
             $('.boceto').hide();
-            $('#video-mockups').show();
+            $('#referencias').show();
         })();
 
         function muestraBoceto(elem){
