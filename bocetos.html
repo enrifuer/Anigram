@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Miembros</title>
+    <meta charset="utf-8">
+    
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="css/Styles.css" media="all" />
+
+	<!--Librerias necesarias para bootstrap-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+	<!--insercion del favicon y del titulo de la pagina-->
+	<link rel="icon" href="Assets/img/PataIcon.ico" sizes="16x16" type="image/ico">
+</head>
+
+<body>
+
+    <div class="center"><a title="Inicio" href="index.html"><img src="Assets/img/Logo-Completo.png" alt="Logo" width="500" height="180" /></a></div>
+
+    <nav class="navbar navbar-default " role="navigation">
+
+        <!--Contenido y enlaces del menu-->
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-center">
+                <li><a href="detalles.html">Detalles</a></li>
+                <li><a href="bocetos.html">Bocetos</a></li>
+                <li><a href="miembros.html">Miembros</a></li>
+                <li><a href="planificacion.html">Planificación</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container" >
+        <div class="btn-group bocetos-menu " role="group" >
+            <button class="btn btn-default" onclick="muestraBoceto('login')">Login</button>
+            <button class="btn btn-default" onclick="muestraBoceto('registro')">Registro usuario</button>
+            <button class="btn btn-default" onclick="muestraBoceto('menu-lateral')">Menú lateral</button>
+            <button class="btn btn-default" onclick="muestraBoceto('evaluar-foto')">Evaluar fotos</button>
+            <button class="btn btn-default" onclick="muestraBoceto('comentario')">Comentar fotos</button>
+            <button class="btn btn-default" onclick="muestraBoceto('subir-foto')">Subir foto</button>
+            <button class="btn btn-default" onclick="muestraBoceto('Perfil-usuario')">Perfil</button>
+            <button class="btn btn-default" onclick="muestraBoceto('notificaciones')">Notificaciones</button>
+            <button class="btn btn-default" onclick="muestraBoceto('busqueda')">Buscar</button>
+            <button class="btn btn-default" onclick="muestraBoceto('amigos')">Amigos</button>
+            <button class="btn btn-default" onclick="muestraBoceto('Configuracion')">Ajustes</button>
+            <button class="btn btn-default" onclick="muestraBoceto('video-mockups')">Video</button>
+        </div>
+        <div class="col-md-10 col-offset-md-1 boceto" id="video-mockups">
+            <h1>Vídeo guía de la aplicación</h1>
+            <video width="1080" height="920" controls>
+              <source src="Assets/Videos/Diseno.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+            <p>Se adjunta un pequeño vídeo en el que se muestra la funcionalidad base de la aplicación.</p>
+        </div>
+
+        <div class="col-md-10 col-offset-md-1 boceto" id="login">
+            <h1>Login</h1>
+            <p>En el login de nuestra aplicación nos encontramos con tres opciones:</p>
+            <ol>
+                <li>Si ya nos hemos registrado, y tenemos una cuenta nos logueamos con el nombre de usuario y la contraseña correspondiente, pulsando el boton Login.</li>
+                <li>Nos registramos en la aplicación pulsando Resgistrar.</li>
+                <li>Entramos como invitado, lo cual nos restringirá en gran medida las acciones que podemos realizar dentro de la aplicación.</li>
+            </ol>
+            <img src="assets/img/Bocetos/Registro.png" alt="Registro">
+            <p>Los usuarios registrados verán la vista home como se muesra a continuación:</p>
+            <img src="assets/img/Bocetos/Usuario_registrado.png" alt="Usuario registrado">
+            <p>Mientras los que entran como invitado verán:</p>
+            <img src="assets/img/Bocetos/Invitado.png" alt="Invitado">
+        </div>
+
+         <div class="col-md-10 col-offset-md-1 boceto" id="registro">
+            <h1>Registro</h1>
+            <p>En el registro vamos a tener que especificar qué tipo de usuairo vamos a utilizar:</p>
+            <ol>
+                <li>Usuario con mascota, que tendrá una o varias mascotas vinculadas a su perfil.</li>
+                <li>Comerciales, que podrán dar a conocer su negocio además de promocionarse.</li>
+            </ol>
+            <h3>Usuario con mascotas</h3>
+            <img src="assets/img/Bocetos/Registro_mascota.png" alt="Registro mascota">
+            <h3>Usuario comercial</h3>
+            <img src="assets/img/Bocetos/Registro_comercio.png" alt="Registro comercio">
+        </div>
+
+        <div class="col-md-10 col-offset-md-1 boceto" id="menu-lateral">
+            <h1>Menú lateral</h1>
+            <p>En el lateral tendremos las distintas acciones que podrá tomar el usuairo dependiendo del rol al que pertenezca:</p>
+            <ol>
+                <li>Usuario registrado:
+                    <ul>
+                        <li>Mirar lar últimas notificaciones del perfil de la mascota/comercio en la que esté en el momento. (Puntuaciones, seguimientos o comentarios)</li>
+                        <li>Buscar publicaciones por usuario, mascota, negocio o hashtag</li>
+                        <li>Mirar que usuarios siguen a tu mascota/negocio y las solicitudes de personas que quieren.</li>
+                        <li>Configuración del perfil </li>
+                        <li>Log out </li>
+                        <li>Volver a home</li>
+                    </ul>
+                </li>
+                <li>Invitados:
+                    <ul>
+                        <li>Buscar publicaciones por mascota/comercio, hashag o usuario.</li>
+                        <li>Volver a la pantalla de login.</li>
+                    </ul>
+                </li>
+            </ol>
+            <h3>Menú desplegado</h3>
+            <img src="assets/img/Bocetos/Menu_detalle.png" alt="Menó desplegado">
+            <p>El menú se despliega al pulsar en la foto del perfil logueado en la parte superior izquierda.</p>
+        </div>
+        <div class="col-md-10 col-offset-md-1 boceto" id="evaluar-foto">
+            <h1>Evaluar foto</h1>
+            <p>Las fotos se evaluarán de 1 a 5 woofs. La popularidad por tanto, se calculará en base a la media de los woofs obtenidos en las publicaciones.</p>
+            <p>Para evaluar la publicacion deseada solo hay que pulsar el número de woofs que le quieras asignar, empezando el primero por la iquierda</p>
+            <img src="assets/img/Bocetos/lIKE.png" alt="Evaluación de fotos">
+        </div>
+        <div class="col-md-10 col-offset-md-1 boceto" id="comentario">
+            <h1>Comentar foto</h1>
+            <p>Para comentar una foto hay que ser usuario registrado. En el área de la derecha de la foto se encuentran los comentarios y últimos woofs. Para añadir un comentario no hay más que pulsar el icono '+' situado en la parte derecha.</p>
+            <img src="assets/img/Bocetos/Comentario.png" alt="Subir foto 1">
+        </div>
+        <div class="col-md-10 col-offset-md-1 boceto" id="subir-foto">
+            <h1>Subir foto</h1>
+            <p>Para subir una foto hay que ser usuario registrado. Las fotos se seleccionan pulsando en el logo de Anigram que estará de forma estática situado en la parte inferior derecha.</p>
+            <img src="assets/img/Bocetos/subir_foto_1.png" alt="Subir foto 1">
+            <img src="assets/img/Bocetos/Subir_foto2.png" alt="Subir foto 2">
+        </div>
+        <div class="col-md-10 col-offset-md-1 boceto" id="Perfil-usuario">
+            <h1>Perfil de usuario</h1>
+            <p>El perfil de usuario aparece siempre que pulsamos sobre la foto de usuario situada en la parte superior izquierd de las publicaciones, o bien cuando buscamos un usuario en la pestaña de búsqueda.</p>
+            <p>Éste aparecerá en la parte derecha de la pantalla, y se comportará de manera diferente dependiendo del tipo de usuario que queremos ver:</p>
+            <ul>
+                <li>Si el usuario tiene mascota, aparecerá el perfil de la mascota, y debajo del nombre se vinculará el perfil del dueño. En este, podremos ver todos los animales que tiene vincluados.
+                    <img src="assets/img/Bocetos/Perfil_mascota_1.png" alt="Perfil mascota 1">
+                    <img src="assets/img/Bocetos/Perfil_mascota_2.png" alt="Perfil mascota 2">
+                </li>
+                <li>Si el usuario es comercial sólo aparecerán los datos de su negocio, además de sus publicaciones:
+                    <img src="assets/img/Bocetos/Perfil_comercio.png" alt="Perfil comercial">
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-10 col-offset-md-1 boceto" id="notificaciones">
+            <h1>Notificaciones</h1>
+            <p>Accedemos al panel de notificaciones mediante el menú lateral izquierdo.</p>
+            <p>En esta ventana podremos ver las últimas notificaciones relacionadas con el perfil de mascota que estemos utilizando en el momento. Entre estas notificaciones se incluyen:</p>
+            <ul>
+                <li>Woofs</li>
+                <li>Comentarios</li>
+                <li>Notificaciones de seguimiento</li>
+            </ul>
+           <img src="assets/img/Bocetos/Notificaciones.png" alt="Notificaciones">
+        </div>
+        <div class="col-md-10 col-offset-md-1 boceto" id="busqueda">
+            <h1>Búsqueda</h1>
+            <p>Accedemos al panel de búsqueda mediante el menú lateral izquierdo.</p>
+            <p>En esta ventana podremos buscar cuentas por:</p>
+            <ul>
+                <li>Dueño o mascota </li>
+                <li>Nombre comercio</li>
+                <li>Hashtag</li>
+                <li>Tipo mascota (perro, gato, conejo...)</li>
+            </ul>
+           <img src="assets/img/Bocetos/busqueda.png" alt="Búsqueda">
+        </div>
+        <div class="col-md-10 col-offset-md-1 boceto" id="amigos">
+            <h1>Amigos</h1>
+            <p>Accedemos al panel de búsqueda mediante el menú lateral izquierdo.</p>
+            <p>En esta ventana podremos ver qué cuentas siguen a tu mascota/comercio:</p>
+            <img src="assets/img/Bocetos/Amigos_aceptados.png" alt="Amigos aceptados ">
+            <p>y qué cuentas te han mandadouna notificación para seguir tu mascota/comercio:</p>
+            <img src="assets/img/Bocetos/Peticiones_amigos.png" alt="Peticiones de amigos">
+        </div>
+        <div class="col-md-10 col-offset-md-1 boceto" id="Configuracion">
+            <h1>Ajustes</h1>
+            <p>Accedemos al panel de búsqueda mediante el menú lateral izquierdo.</p>
+            <p>En esta ventana podremos modificar los datos de tu perfil y el de tu mascota:</p>
+            <img src="assets/img/Bocetos/Configuracion.png" alt="Configuración mascota ">
+            <p>además de poder añadir nuevas mascotas a tu perfil</p>
+            <img src="assets/img/Bocetos/Nueva_mascota.png" alt="Nueva mascota ">
+            <p>ó bien cambiar los datos que se muestran en tu perfil de negocio:</p>
+            <img src="assets/img/Bocetos/Configuracion_comercial.png" alt="Configuración comercial">
+        </div>
+        <div class="col-md-10 col-offset-md-1 boceto" id="logout">
+            <h1>Logout</h1>
+            
+            <p>Para salir de la aplicación solo hace falta pulsar el icono <img src="assets/img/logout.png" alt="logout "> del menú lateral.</p>
+        </div>
+    </div>
+
+    <script>
+        (function(){
+            $('.boceto').hide();
+            $('#video-mockups').show();
+        })();
+
+        function muestraBoceto(elem){
+            var id = "#"+elem;
+            $('.boceto').hide();
+            $(id).show();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+/*------ MENU ------*/
+/*color para la barra de menu completa*/
+nav.navbar{
+	background-color: #ffb3b1;
+}
+
+/*Estilo para la barra que contiene el texto de menu, para que aparezca alineada en el centro*/
+.navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.navbar-default .navbar-nav > li > a{
+	color: white !important;
+}
+.navbar-nav > li:hover{
+	background-color: #c77371;
+}
+nav.navbar ul.nav li {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 30px;
+    line-height: !important 1.42857143;
+    color: !important #333;
+    background-color: !important #fff;
+}
+
+
+/*------ BODY ------*/
+.h3, h3 {
+    font-family: "Cormorant Garamond" !important, serif !important; 
+    margin-left: 50px; 
+    margin-right: 50px;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+	font-family: "Cormorant Garamond", serif !important;
+	font-weight: 500;
+	line-height: 1.1;
+	color: inherit;
+}
+p, label, li{
+	font-family: "Cormorant Garamond", serif !important;
+	font-size: 20px;
+}
+.center{
+	text-align: center;
+	align-content: center;
+}
+
+.bold{
+	font-weight: bold;
+}
+.text-right{
+	text-align: right;
+}
+body{
+	/*background-image: url('../Assets/img/fondo-body.png');*/
+}
+
+/*------ FOOTER ------*/
+#footer{
+ position: relative;
+ bottom: 0;
+ width: 100%;
+ height: 205px;
+}
+
+.page-footer2 {
+  position: relative;
+  margin-top: 20px;
+  padding-top: 20px;
+  background-color: #ffb3b1;
+  color: white; 
+}
+
+/*------- TABLA PLANIFICACION --------*/
+
+#tablahitos th {
+	text-align: center;
+	border: black 1px solid;
+}
+#tablahitos td{
+	height: 100px;
+	width: 100px;
+	border: black 1px solid;
+}
+#tablahitos{
+	border: black 1px solid;
+}
+tr:nth-child(even){
+   background: #FBEFEF;
+}
+tr:nth-child(odd){
+   background: #F8E0E0;
+}
+
+/*------- MIEMBROS ---------*/
+#Descripcion{
+	margin: 30px 0;
+}
+.bold{
+	font-weight: bold;
+}
+.member {
+	text-align: center;
+	padding: 24px 0 !important;
+}
+.member > a{
+	color: #a8e5c9;
+	text-decoration: none;
+}
+.member > a:hover{
+	text-decoration: none;
+}
+.list-group-item{
+	border: 1px solid #a8e5c9!important;	
+}
+.member:hover{
+	background-color: #a8e5c9;	
+}
+
+.member:hover > a{
+	color:white;
+}
+
+.imagen-perfil{
+	width: 300px;
+	border-radius: 20px;
+}
+
+.panel-default{
+	margin: 30px 0;
+}
+
+.panel-heading{
+	background-color: #a8e5c9 !important;
+}
+
+.panel-body{
+	background-color: white !important;
+}
+
+
+.datos-miembros {
+	text-align: justify;
+}
+
+/*-------- CONTACTO ----------*/
+.input-group{
+	margin: 20px 0;
+	width: 100%;
+}
+
+#terminos-condiciones{
+	color:darkred;
+	font-size: 14px;
+	margin-bottom: 20px ;
+}
+
+/*-------- BOCETOS MENU -------*/
+.btn-default{
+	border: 2px solid #bae0c2 !important;
+	color: #81b78d !important;
+}
+
+.btn-default:hover, .btn-default:focus{
+	background-color: #81b78d !important;
+	color: white !important;
+}
+
+.boceto>img, .boceto>ul>li>img{
+	width: 700px;
+    margin: 0 20% 15% 20%;
+}
