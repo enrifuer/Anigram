@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="estilo.css" />
+	
 	<meta charset="utf-8">
 	<title>Portada</title>
 </head>
@@ -15,7 +15,7 @@
 		<div id="contenido">
 			
 
-			<form action="../controlador/procesarLoginValido.php" method="POST">
+			<form action="../controlador/procesarLogin.php" method="POST">
 			
 			<legend>Usuario y contraseña</legend>
 			<p><label>Name:</label> <input type="text" name="user" /></p>

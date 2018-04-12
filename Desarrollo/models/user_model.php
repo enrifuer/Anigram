@@ -22,7 +22,7 @@ $this->db=Conexion::conec();
 public function buscarUsuarios_login($Nombre, $Clave){
 	
  $result = $this->db->query("SELECT * from usuario where Nombre = '$Nombre' AND Clave='$Clave'");
- //$users = mysqli_fetch_array($result);
+ 
  return $result;
 }
 
