@@ -1,0 +1,271 @@
+/*------------------------- Fuentes ------------------------- */
+  h3, h4, h5, h6, a{
+    font-family: 'Playfair Display', serif;    
+}
+p, label, textarea, input{
+    font-family: 'Cormorant Garamond', serif;
+}
+
+textarea, input{
+    color: #787979;
+    font-size: 20px;
+}
+h1 {
+    font-size: 130px;
+    text-align: center;
+}
+
+h1, h2{
+    color: #ffde93;
+    font-family: 'Dancing Script', cursive;
+}
+label{
+    font-size:30px;
+    margin-bottom: -15px;
+    margin-top: 20px;
+}
+h2,h3, label{
+    color: #e07070;    
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.italic{
+    font-style: italic;
+}
+.references a:hover {
+    text-decoration: none;
+    color: #d8af52;
+}
+
+.references a {
+    margin: 5px;
+    color: #aaa;
+}
+/*------------------------- General ------------------------- */
+body{
+    background-image: url("../img/fondo-body-semitransparente.png");
+}
+#vertical-separator {
+    color: #e8dab9;
+}
+#logo-grande{
+    position:relative;
+    width: 200px;
+    margin: 10px 50px;
+}
+
+.container-anigram{
+    min-width: 350px;
+}
+
+.alert{
+    width: 100%;
+    margin: 20px 0;
+}
+.alert h6{
+    text-align: center;
+}
+/* Tabs */
+
+.select-tabs {
+    border-bottom: 5px solid #ab6563;
+    box-shadow: -2px 4px 7px -3px #aaa;
+    text-align: center;
+}
+.select-tabs .nav-item {
+    width: 40%;
+}
+
+.select-tabs .nav-link{
+    border-radius: 10px 10px 0px 0px;
+}
+
+.select-tabs .nav-item a {
+    color: white !important;
+    font-size: 25px;
+    background-color: #deb2b0 !important;
+    height: 100%;
+    border:none;
+}
+
+.select-tabs .nav-item a.active {
+    background-color: #ab6563 !important;
+}
+.tab-content{
+    border-left: 2px dashed #deb2b0;
+    height: 70%;
+    padding: 10px 40px;
+    display: none;
+}
+
+.tab-content.active {
+    display: inherit;
+}
+
+.references h1 {
+    font-size: 80px;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 70px;
+}
+/* subir foto */
+.subir-foto-gr:hover {
+    width: 210px;
+    height: 210px;
+}
+.subir-foto-md:hover {
+    width: 110px;
+    height: 110px;
+}
+.subir-foto-pe:hover {
+    width: 60px;
+    height: 60px;
+}
+
+.subir-foto-gr, .subir-foto-md,.subir-foto-pe  {
+    cursor: pointer;
+    background-color: white;
+    transition: width 0.3s, height 0.3s;
+}
+
+/*------------------------- Formularios ------------------------- */
+#perfil-usuario{
+    display:none;
+}
+form.centered {
+    text-align: center;
+}
+
+.fotomascota{
+    margin-top:15px; 
+    margin-left:-86px;;
+    float: left; 
+}
+
+.formulario-textbox-mascota{
+    border-radius: 5px;
+    width: 50%;
+    border: solid 1px #ffc8a0;
+    margin: 10px 0px;
+    background-color: #ffffff;
+    padding: 5px;
+}
+.mascota-nombre-raza{
+    width: 600px;
+    float: right;
+    margin-right: -345px;
+}
+.tipomascota{
+    margin-top: 19px;
+    float: right;
+    margin-right: -47px;
+    margin-bottom: 16px;
+}
+.biomascota{
+    margin-top: 100px;
+    width: 1000px; 
+    float: initial; 
+}
+
+.col-md-2{
+    width: 300px;
+    float: left; 
+}
+
+.formulario-textbox{
+    border-radius: 5px;
+    width: 100%;
+    border: solid 1px #ffc8a0;
+    margin: 10px 0px;
+    background-color: #ffffff;
+    padding: 5px;
+}
+
+.image-upload {
+    text-align: center;
+}
+
+.formulario-textbox:focus{
+    outline: none;
+    box-shadow: 0px 0px 4px 0px #ffc194;
+    background-color:#fffdfb;
+    background-position: center;
+}
+.input-perfil{
+    visibility: hidden;
+}
+
+.foto-perfil{
+    background-image: url(../img/ic_pets_white_24px.svg);
+    border-radius: 50%;
+    box-shadow: 0px 0px 13px 2px #afafaf;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: auto;
+    background-color: #91c8d4;;
+}
+
+.foto-perfil-mascota{
+    background-image: url(../img/fotomascota.png);
+    border-radius: 50%;
+    box-shadow: 0px 0px 13px 2px #afafaf;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: auto;
+    background-color: #91c8d4;;
+}
+
+.perfil-gr{
+     
+    width: 200px;
+    height: 200px;
+    background-size: 195px;
+    
+}
+
+.perfil-md{   
+    width: 100px;
+    height: 100px;
+    background-size: 150px;
+   
+}
+
+.perfil-pe{   
+    width: 50px;
+    height: 50px;
+    background-size: 70px;
+}
+
+
+.submitHueso {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    top: 45px;
+    color: white;
+    cursor: pointer;
+    font-size: 30px;
+}
+.submitHueso:focus {
+    outline: 0;
+}
+
+#boton_enviar {
+    background-image: url('../img/botosico_sinfondo.png');
+    background-repeat: no-repeat;
+    height: 130px;
+    background-size: 300px;
+    background-position: center;
+    cursor: pointer;
+    transition: background-size 0.4s;
+    width: 170px;
+    margin:auto;
+    text-align: center;
+}
+
+#boton_enviar:hover{
+    background-size:  320px;
+}
